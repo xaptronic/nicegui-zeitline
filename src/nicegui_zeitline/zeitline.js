@@ -51,6 +51,27 @@ export default {
       }
     }
 
+    this.conf["eventListeners"] = {
+      click: (event) => {
+        this.$emit("zeitlineClick", event);
+      },
+    };
+
+    this.conf["pivotListeners"] = {
+      start: (event) => {
+        this.$emit("pivotStart", event);
+      },
+      end: (event) => {
+        this.$emit("pivotEnd", event);
+      },
+      click: (event) => {
+        this.$emit("pivotClick", event);
+      },
+      drag: (event) => {
+        this.$emit("pivotDrag", event);
+      },
+    };
+
     var t = new Zeitline.Timeline(this.conf);
     t.render();
   },
