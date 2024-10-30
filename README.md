@@ -10,7 +10,7 @@ To install the NiceGUI Zeitline component, use the following pip command:
 
 ## Usage
 
-```
+```python
 from nicegui import ui
 from nicegui_zeitline import zeitline
 
