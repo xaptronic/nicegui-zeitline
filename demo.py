@@ -1,16 +1,3 @@
-# NiceGUI Zeitline
-
-NiceGUI wrapper around ZeitlineJS timeline component.
-
-## Installation
-
-To install the NiceGUI Zeitline component, use the following pip command:
-
-`pip install nicegui-zeitline`
-
-## Usage
-
-```
 from nicegui import ui
 from nicegui_zeitline import zeitline
 
@@ -30,4 +17,3 @@ ts.add_event("30 Jun 2017")
 ts.add_event("24 Dec 2017")
 
 ui.run()
-```
